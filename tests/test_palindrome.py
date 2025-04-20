@@ -87,3 +87,20 @@ def test_palindrome_nonpalindrome_nonalphanum_string_returns_false():
     result = palindrome(value)
 
     assert not result
+
+
+def test_palindrome_onechar_input_returns_true():
+    value1 = 0
+    value2 = "1"
+    value3 = "a"
+    value4 = "B"
+
+    result1 = palindrome(value1)
+    result2 = palindrome(value2)
+    result3 = palindrome(value3)
+    result4 = palindrome(value4)
+
+    assert result1
+    assert result2
+    assert result3
+    assert result4
